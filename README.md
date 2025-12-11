@@ -105,6 +105,34 @@ Dari latihan ini, mahasiswa memahami bahwa:
   
 ### Latihan 2
 
+Deskripsi Tugas
+
+Membuat program yang menghitung rata-rata nilai mahasiswa dari list yang berisi data campuran (angka dan string). Program harus:
+
+1. Skip data yang bukan angka tanpa crash
+2. Hitung rata-rata dari data valid saja
+3. Lapor data mana yang tidak valid
+
+Data yang diberikan:
+```
+nilai = [80, 90, 'A', 70, 100, 'B']
+```
+Problem:
+
+Ada data string ('A', 'B') yang tidak bisa di-sum
+Jika langsung dijumlahkan, program akan error
+Butuh cara untuk skip data invalid tapi tetap proses yang valid
+
+Solusi yang Diimplementasikan
+Strategi:
+
+1. Loop setiap elemen dalam list
+2. Pakai try-except di dalam loop
+3. Coba konversi ke float
+4. Jika berhasil → tambahkan ke total
+5. Jika gagal (ValueError) → skip dan catat
+6. Hitung rata-rata dari data valid saja
+
 ## Kesimpulan
 1. Exception Handling itu Penting=
    -Program yang bagus tidak boleh crash tiba-tiba
