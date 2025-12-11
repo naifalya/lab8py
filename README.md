@@ -55,6 +55,7 @@ Jika pembagi = 0 → program berhenti dan muncul ZeroDivisionError.
 
     raise digunakan untuk memaksa munculnya error ketika kondisi tidak memenuhi aturan.
     Lalu error tersebut ditangkap oleh try–except.
+   
 ## Latihan
 
 ### Latihan 1
@@ -132,6 +133,12 @@ Strategi:
 4. Jika berhasil → tambahkan ke total
 5. Jika gagal (ValueError) → skip dan catat
 6. Hitung rata-rata dari data valid saja
+
+Latihan ini mengajarkan bahwa:
+- Exception handling bisa digunakan sebagai filter data, bukan hanya menangani error.
+- Error pada satu elemen tidak perlu menghentikan seluruh proses.
+- Sangat penting untuk memisahkan data valid & invalid saat mengolah data dunia nyata.
+- try-except di dalam loop adalah teknik umum dalam pemrosesan data yang tidak bersih (dirty data).
 
 ## Kesimpulan
 1. Exception Handling itu Penting=
